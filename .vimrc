@@ -6,12 +6,16 @@ set autoindent
 let &t_SI = "\e[5 q"  " Vertical bar in insert mode
 let &t_EI = "\e[2 q"  " Block in normal mode
 
+" To install these pluggins, go into vim and run :PlugInstall
 call plug#begin()
 
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-sensible'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
+
+set updatetime=100 " This will make gitgutter refresh quicker
 
 " Neccessary for tmux
 set termguicolors
