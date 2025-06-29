@@ -2,6 +2,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set autoindent
+set hlsearch " Keep searches highlighted until you hit ctrl+l
 
 let &t_SI = "\e[5 q"  " Vertical bar in insert mode
 let &t_EI = "\e[2 q"  " Block in normal mode
